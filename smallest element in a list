@@ -1,0 +1,6 @@
+(define (smallest a list)
+(cond 
+	((Null? list) a)
+	((< a (car list)) (smallest a (cdr list)))
+	(else (smallest (car list) (cdr list)))
+	))
